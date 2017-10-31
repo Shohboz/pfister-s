@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon lib/index.js --ignore test/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon lib/index.js --ignore test",
+    "test:tdd": "node_modules/.bin/mocha -u tdd test/tdd",
+    "test": "npm run test:tdd"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.6.0",
     "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1",
     "nodemon": "^1.12.1"
   }
 }
