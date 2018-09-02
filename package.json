@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon lib/index.js --ignore test",
+    "start": "node lib/index.js",
+    "start:dev": "nodemon lib/index.js --ignore test",
     "test:tdd": "node_modules/.bin/mocha -u tdd test/tdd",
     "test": "npm run test:tdd"
   },
